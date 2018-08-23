@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08C7F49F223FAFB7BE6B2C3E6B9BDA3F /* UICircularProgressRing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FDCF871E4E24A90B210FAF7F3081AD /* UICircularProgressRing-dummy.m */; };
+		0FC35B926780056EFFC5C0EE2823B613 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		2056C98D151CF0834A682E17DD5F9984 /* UICircularProgressRingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A07FAD22A8AEC2BE6752F7992C54A5A /* UICircularProgressRingStyle.swift */; };
+		3E30CA1D1B0075EE52D1C6BD9826E028 /* UICircularProgressRing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F7CC3E7EF3EB677415D2EC14EB8797 /* UICircularProgressRing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EC730A7B8F73E534E0517B7BCDDC608 /* Pods-Breathing Cues-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7EBF67480DF4561932B1B8152D758C4 /* Pods-Breathing Cues-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F186443E3296AE9CB636DB39FA53ADD /* UICircularProgressRingGradientPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6292ABE79009663DDE77350E1C65983A /* UICircularProgressRingGradientPosition.swift */; };
+		AA95BD312AE9A84148F9130C08B5F7F3 /* Pods-Breathing Cues-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D989887FCBFB6413C04601C38CDDE3 /* Pods-Breathing Cues-dummy.m */; };
+		C4E21CF43DB0A1227479138A1F824193 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		CBF2BF314CF13F6E74EAD6C44300920D /* UICircularProgressRingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24D0A3A058ED2D67C6F3FFC3A1482CC /* UICircularProgressRingDelegate.swift */; };
+		ED41B03754EAA98851653C2F6BDAE13C /* UICircularProgressRingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206865499EDEAD7696463F9BF2615DEA /* UICircularProgressRingLayer.swift */; };
+		EF5ABB3213CE47148977FD60B015F11C /* UICircularProgressRing.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E6CC831E0123D0539E55AC03072233 /* UICircularProgressRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3AE86F5C5C045EC19CB7A06D4A85A51 /* UICircularProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1DFE1DE330BE21FE164A8D2F6D6E92 /* UICircularProgressRing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F72D388B8E10574EF17B573937104C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFC92B2C064002A01067E3D8596D07E7;
+			remoteInfo = UICircularProgressRing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E6CC831E0123D0539E55AC03072233 /* UICircularProgressRing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UICircularProgressRing.h; path = src/UICircularProgressRing/UICircularProgressRing.h; sourceTree = "<group>"; };
+		1EB7268126CF2BCAA47EF8BA285CDEC3 /* UICircularProgressRing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICircularProgressRing.xcconfig; sourceTree = "<group>"; };
+		206865499EDEAD7696463F9BF2615DEA /* UICircularProgressRingLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICircularProgressRingLayer.swift; path = src/UICircularProgressRing/UICircularProgressRingLayer.swift; sourceTree = "<group>"; };
+		4693CE785A17036E2C992A7EE8879863 /* Pods-Breathing Cues.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breathing Cues.release.xcconfig"; sourceTree = "<group>"; };
+		4DB556A31EF7676DF9DB916106123749 /* Pods_Breathing_Cues.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Breathing_Cues.framework; path = "Pods-Breathing Cues.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A3A90216370EB3A35900622678E9394 /* UICircularProgressRing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UICircularProgressRing.framework; path = UICircularProgressRing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6094646A129151367408FDC0516E7E58 /* Pods-Breathing Cues.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breathing Cues.debug.xcconfig"; sourceTree = "<group>"; };
+		6292ABE79009663DDE77350E1C65983A /* UICircularProgressRingGradientPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICircularProgressRingGradientPosition.swift; path = src/UICircularProgressRing/UICircularProgressRingGradientPosition.swift; sourceTree = "<group>"; };
+		65D989887FCBFB6413C04601C38CDDE3 /* Pods-Breathing Cues-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Breathing Cues-dummy.m"; sourceTree = "<group>"; };
+		67826FAD1517B65E7ABAF51CF2CB1FB1 /* UICircularProgressRing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UICircularProgressRing.modulemap; sourceTree = "<group>"; };
+		6A07FAD22A8AEC2BE6752F7992C54A5A /* UICircularProgressRingStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICircularProgressRingStyle.swift; path = src/UICircularProgressRing/UICircularProgressRingStyle.swift; sourceTree = "<group>"; };
+		6B1DFE1DE330BE21FE164A8D2F6D6E92 /* UICircularProgressRing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICircularProgressRing.swift; path = src/UICircularProgressRing/UICircularProgressRing.swift; sourceTree = "<group>"; };
+		6B7BCC44C45AA1C6066734EA92645EF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73068DDECFD3F1CB0BBC2AF245D67044 /* Pods-Breathing Cues-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breathing Cues-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CFB86D43483F7136A76A2D542A4C86E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81BCB68C2EC338BE5D799081B7CF7B8 /* Pods-Breathing Cues-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Breathing Cues-acknowledgements.plist"; sourceTree = "<group>"; };
+		B24D0A3A058ED2D67C6F3FFC3A1482CC /* UICircularProgressRingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICircularProgressRingDelegate.swift; path = src/UICircularProgressRing/UICircularProgressRingDelegate.swift; sourceTree = "<group>"; };
+		B742892D4B1F8DCE2A7B07F4CFE531A6 /* UICircularProgressRing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICircularProgressRing-prefix.pch"; sourceTree = "<group>"; };
+		C03D56CEEFDC7C0A34875D474C650F1B /* Pods-Breathing Cues-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breathing Cues-frameworks.sh"; sourceTree = "<group>"; };
+		D106D587BBF2F79BFF0CF203114014FB /* Pods-Breathing Cues.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Breathing Cues.modulemap"; sourceTree = "<group>"; };
+		E1C11B201F1740137E84DCBDA517AF06 /* Pods-Breathing Cues-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Breathing Cues-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1F7CC3E7EF3EB677415D2EC14EB8797 /* UICircularProgressRing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICircularProgressRing-umbrella.h"; sourceTree = "<group>"; };
+		E7EBF67480DF4561932B1B8152D758C4 /* Pods-Breathing Cues-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breathing Cues-umbrella.h"; sourceTree = "<group>"; };
+		F6FDCF871E4E24A90B210FAF7F3081AD /* UICircularProgressRing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICircularProgressRing-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67FA8CF2BE886A0CDAD383C62E2040AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FC35B926780056EFFC5C0EE2823B613 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F181A0C1F8E01551D4EDCE463F01E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E21CF43DB0A1227479138A1F824193 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		71192B389B6F246B68D3F108C879FACE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DB556A31EF7676DF9DB916106123749 /* Pods_Breathing_Cues.framework */,
+				5A3A90216370EB3A35900622678E9394 /* UICircularProgressRing.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73DB0DEFA68D1E52779CBCB7C8ACE857 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B7BCC44C45AA1C6066734EA92645EF7 /* Info.plist */,
+				67826FAD1517B65E7ABAF51CF2CB1FB1 /* UICircularProgressRing.modulemap */,
+				1EB7268126CF2BCAA47EF8BA285CDEC3 /* UICircularProgressRing.xcconfig */,
+				F6FDCF871E4E24A90B210FAF7F3081AD /* UICircularProgressRing-dummy.m */,
+				B742892D4B1F8DCE2A7B07F4CFE531A6 /* UICircularProgressRing-prefix.pch */,
+				E1F7CC3E7EF3EB677415D2EC14EB8797 /* UICircularProgressRing-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UICircularProgressRing";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E6A1422DD9721881F4BA7FA7524982A0 /* Pods */,
+				71192B389B6F246B68D3F108C879FACE /* Products */,
+				AA026F46943ACEDD9B5468F984E68F48 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F7D474AE830BF8D85DC6037E7474A3C /* Pods-Breathing Cues */ = {
+			isa = PBXGroup;
+			children = (
+				9CFB86D43483F7136A76A2D542A4C86E /* Info.plist */,
+				D106D587BBF2F79BFF0CF203114014FB /* Pods-Breathing Cues.modulemap */,
+				E1C11B201F1740137E84DCBDA517AF06 /* Pods-Breathing Cues-acknowledgements.markdown */,
+				A81BCB68C2EC338BE5D799081B7CF7B8 /* Pods-Breathing Cues-acknowledgements.plist */,
+				65D989887FCBFB6413C04601C38CDDE3 /* Pods-Breathing Cues-dummy.m */,
+				C03D56CEEFDC7C0A34875D474C650F1B /* Pods-Breathing Cues-frameworks.sh */,
+				73068DDECFD3F1CB0BBC2AF245D67044 /* Pods-Breathing Cues-resources.sh */,
+				E7EBF67480DF4561932B1B8152D758C4 /* Pods-Breathing Cues-umbrella.h */,
+				6094646A129151367408FDC0516E7E58 /* Pods-Breathing Cues.debug.xcconfig */,
+				4693CE785A17036E2C992A7EE8879863 /* Pods-Breathing Cues.release.xcconfig */,
+			);
+			name = "Pods-Breathing Cues";
+			path = "Target Support Files/Pods-Breathing Cues";
+			sourceTree = "<group>";
+		};
+		A4CE9748E71A9A17AB62261F5F3FC31B /* UICircularProgressRing */ = {
+			isa = PBXGroup;
+			children = (
+				08E6CC831E0123D0539E55AC03072233 /* UICircularProgressRing.h */,
+				6B1DFE1DE330BE21FE164A8D2F6D6E92 /* UICircularProgressRing.swift */,
+				B24D0A3A058ED2D67C6F3FFC3A1482CC /* UICircularProgressRingDelegate.swift */,
+				6292ABE79009663DDE77350E1C65983A /* UICircularProgressRingGradientPosition.swift */,
+				206865499EDEAD7696463F9BF2615DEA /* UICircularProgressRingLayer.swift */,
+				6A07FAD22A8AEC2BE6752F7992C54A5A /* UICircularProgressRingStyle.swift */,
+				73DB0DEFA68D1E52779CBCB7C8ACE857 /* Support Files */,
+			);
+			name = UICircularProgressRing;
+			path = UICircularProgressRing;
+			sourceTree = "<group>";
+		};
+		AA026F46943ACEDD9B5468F984E68F48 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F7D474AE830BF8D85DC6037E7474A3C /* Pods-Breathing Cues */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6A1422DD9721881F4BA7FA7524982A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE9748E71A9A17AB62261F5F3FC31B /* UICircularProgressRing */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		85CC0D8064FC5B61FF961E2C4CB13935 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC730A7B8F73E534E0517B7BCDDC608 /* Pods-Breathing Cues-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC2572AB7DFA8F56B5EFFA38E6695B2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E30CA1D1B0075EE52D1C6BD9826E028 /* UICircularProgressRing-umbrella.h in Headers */,
+				EF5ABB3213CE47148977FD60B015F11C /* UICircularProgressRing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A9F28F1978DE177AF9AF5F398A29E912 /* Pods-Breathing Cues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A517A8EF2B75F48BB6E82DF4635A9FF /* Build configuration list for PBXNativeTarget "Pods-Breathing Cues" */;
+			buildPhases = (
+				85CC0D8064FC5B61FF961E2C4CB13935 /* Headers */,
+				80F04344F8A3784D3F5CF1D5F9AC68F3 /* Sources */,
+				7F181A0C1F8E01551D4EDCE463F01E4A /* Frameworks */,
+				7E2E504D1A99EB95211534E121A4E2C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2CBFADB80AA20E15DD4CE0C624AA011 /* PBXTargetDependency */,
+			);
+			name = "Pods-Breathing Cues";
+			productName = "Pods-Breathing Cues";
+			productReference = 4DB556A31EF7676DF9DB916106123749 /* Pods_Breathing_Cues.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFC92B2C064002A01067E3D8596D07E7 /* UICircularProgressRing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6572336FADCF47E7EA671C3D3BF17FA6 /* Build configuration list for PBXNativeTarget "UICircularProgressRing" */;
+			buildPhases = (
+				AC2572AB7DFA8F56B5EFFA38E6695B2C /* Headers */,
+				BF147A0EF5A75623BE7BEEC7349E1931 /* Sources */,
+				67FA8CF2BE886A0CDAD383C62E2040AB /* Frameworks */,
+				BD9592A22545B968D8D49E538B0AF955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICircularProgressRing;
+			productName = UICircularProgressRing;
+			productReference = 5A3A90216370EB3A35900622678E9394 /* UICircularProgressRing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 71192B389B6F246B68D3F108C879FACE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9F28F1978DE177AF9AF5F398A29E912 /* Pods-Breathing Cues */,
+				EFC92B2C064002A01067E3D8596D07E7 /* UICircularProgressRing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E2E504D1A99EB95211534E121A4E2C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9592A22545B968D8D49E538B0AF955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80F04344F8A3784D3F5CF1D5F9AC68F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA95BD312AE9A84148F9130C08B5F7F3 /* Pods-Breathing Cues-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF147A0EF5A75623BE7BEEC7349E1931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C7F49F223FAFB7BE6B2C3E6B9BDA3F /* UICircularProgressRing-dummy.m in Sources */,
+				F3AE86F5C5C045EC19CB7A06D4A85A51 /* UICircularProgressRing.swift in Sources */,
+				CBF2BF314CF13F6E74EAD6C44300920D /* UICircularProgressRingDelegate.swift in Sources */,
+				4F186443E3296AE9CB636DB39FA53ADD /* UICircularProgressRingGradientPosition.swift in Sources */,
+				ED41B03754EAA98851653C2F6BDAE13C /* UICircularProgressRingLayer.swift in Sources */,
+				2056C98D151CF0834A682E17DD5F9984 /* UICircularProgressRingStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2CBFADB80AA20E15DD4CE0C624AA011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICircularProgressRing;
+			target = EFC92B2C064002A01067E3D8596D07E7 /* UICircularProgressRing */;
+			targetProxy = 9F72D388B8E10574EF17B573937104C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1448F7C29CE7448303510243DB52B918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB7268126CF2BCAA47EF8BA285CDEC3 /* UICircularProgressRing.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICircularProgressRing/UICircularProgressRing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICircularProgressRing/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UICircularProgressRing/UICircularProgressRing.modulemap";
+				PRODUCT_MODULE_NAME = UICircularProgressRing;
+				PRODUCT_NAME = UICircularProgressRing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6DD03699FF97A40EAE7B0BB1FFD3B16B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6E9410A6A4F847534BD82879A52B033E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6094646A129151367408FDC0516E7E58 /* Pods-Breathing Cues.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Breathing Cues/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Breathing Cues/Pods-Breathing Cues.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D44C072B959100B9479BC0D5CD2A27BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D5802140F6DCDAFA71B8B17554F8EE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB7268126CF2BCAA47EF8BA285CDEC3 /* UICircularProgressRing.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICircularProgressRing/UICircularProgressRing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICircularProgressRing/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UICircularProgressRing/UICircularProgressRing.modulemap";
+				PRODUCT_MODULE_NAME = UICircularProgressRing;
+				PRODUCT_NAME = UICircularProgressRing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D68BBA4B383A036D8C2D94CD16BDA399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4693CE785A17036E2C992A7EE8879863 /* Pods-Breathing Cues.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Breathing Cues/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Breathing Cues/Pods-Breathing Cues.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44C072B959100B9479BC0D5CD2A27BB /* Debug */,
+				6DD03699FF97A40EAE7B0BB1FFD3B16B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A517A8EF2B75F48BB6E82DF4635A9FF /* Build configuration list for PBXNativeTarget "Pods-Breathing Cues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E9410A6A4F847534BD82879A52B033E /* Debug */,
+				D68BBA4B383A036D8C2D94CD16BDA399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6572336FADCF47E7EA671C3D3BF17FA6 /* Build configuration list for PBXNativeTarget "UICircularProgressRing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1448F7C29CE7448303510243DB52B918 /* Debug */,
+				D5802140F6DCDAFA71B8B17554F8EE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

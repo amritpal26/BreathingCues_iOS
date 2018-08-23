@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A6D7B56A2145B45091036AB /* Pods_Breathing_Cues.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6837659CFCDB6139DD94E124 /* Pods_Breathing_Cues.framework */; };
 		F0C81DDD212DFB26008E9747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C81DDC212DFB26008E9747 /* AppDelegate.swift */; };
 		F0C81DDF212DFB26008E9747 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C81DDE212DFB26008E9747 /* FirstViewController.swift */; };
 		F0C81DE1212DFB26008E9747 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C81DE0212DFB26008E9747 /* SecondViewController.swift */; };
 		F0C81DE4212DFB26008E9747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C81DE2212DFB26008E9747 /* Main.storyboard */; };
 		F0C81DE6212DFB28008E9747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C81DE5212DFB28008E9747 /* Assets.xcassets */; };
 		F0C81DE9212DFB28008E9747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C81DE7212DFB28008E9747 /* LaunchScreen.storyboard */; };
+		F0C81DF1212E03A8008E9747 /* pickerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0C81DF0212E03A8008E9747 /* pickerData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12B0181FB1298AE83D2F367C /* Pods-Breathing Cues.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breathing Cues.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breathing Cues/Pods-Breathing Cues.debug.xcconfig"; sourceTree = "<group>"; };
+		6837659CFCDB6139DD94E124 /* Pods_Breathing_Cues.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breathing_Cues.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04DDC9496EE0A9B0F8ED025 /* Pods-Breathing Cues.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breathing Cues.release.xcconfig"; path = "Pods/Target Support Files/Pods-Breathing Cues/Pods-Breathing Cues.release.xcconfig"; sourceTree = "<group>"; };
 		F0C81DD9212DFB26008E9747 /* Breathing Cues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breathing Cues.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C81DDC212DFB26008E9747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0C81DDE212DFB26008E9747 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		F0C81DE5212DFB28008E9747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0C81DE8212DFB28008E9747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0C81DEA212DFB28008E9747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0C81DF0212E03A8008E9747 /* pickerData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = pickerData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6D7B56A2145B45091036AB /* Pods_Breathing_Cues.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55D06CAFE2E7148BB69D47D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12B0181FB1298AE83D2F367C /* Pods-Breathing Cues.debug.xcconfig */,
+				C04DDC9496EE0A9B0F8ED025 /* Pods-Breathing Cues.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD266BD8414AA4064A7D993E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6837659CFCDB6139DD94E124 /* Pods_Breathing_Cues.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F0C81DD0212DFB26008E9747 = {
 			isa = PBXGroup;
 			children = (
 				F0C81DDB212DFB26008E9747 /* Breathing Cues */,
 				F0C81DDA212DFB26008E9747 /* Products */,
+				55D06CAFE2E7148BB69D47D9 /* Pods */,
+				AD266BD8414AA4064A7D993E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				F0C81DE5212DFB28008E9747 /* Assets.xcassets */,
 				F0C81DE7212DFB28008E9747 /* LaunchScreen.storyboard */,
 				F0C81DEA212DFB28008E9747 /* Info.plist */,
+				F0C81DF0212E03A8008E9747 /* pickerData.plist */,
 			);
 			path = "Breathing Cues";
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0C81DED212DFB28008E9747 /* Build configuration list for PBXNativeTarget "Breathing Cues" */;
 			buildPhases = (
+				6F3AF16D1DD0A6386619525B /* [CP] Check Pods Manifest.lock */,
 				F0C81DD5212DFB26008E9747 /* Sources */,
 				F0C81DD6212DFB26008E9747 /* Frameworks */,
 				F0C81DD7212DFB26008E9747 /* Resources */,
+				8E7107FEB2DB7D4413BD93EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +156,59 @@
 			files = (
 				F0C81DE9212DFB28008E9747 /* LaunchScreen.storyboard in Resources */,
 				F0C81DE6212DFB28008E9747 /* Assets.xcassets in Resources */,
+				F0C81DF1212E03A8008E9747 /* pickerData.plist in Resources */,
 				F0C81DE4212DFB26008E9747 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F3AF16D1DD0A6386619525B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Breathing Cues-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E7107FEB2DB7D4413BD93EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Breathing Cues/Pods-Breathing Cues-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Breathing Cues/Pods-Breathing Cues-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0C81DD5212DFB26008E9747 /* Sources */ = {
@@ -282,9 +359,11 @@
 		};
 		F0C81DEE212DFB28008E9747 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B0181FB1298AE83D2F367C /* Pods-Breathing Cues.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82Y35HJAN7;
 				INFOPLIST_FILE = "Breathing Cues/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +378,11 @@
 		};
 		F0C81DEF212DFB28008E9747 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04DDC9496EE0A9B0F8ED025 /* Pods-Breathing Cues.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82Y35HJAN7;
 				INFOPLIST_FILE = "Breathing Cues/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
