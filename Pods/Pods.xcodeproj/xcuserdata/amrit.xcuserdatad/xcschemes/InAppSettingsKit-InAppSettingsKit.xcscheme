@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DB600544857BD8726AA2FDCE9FABBD19"
-               BuildableName = "Pods_Breathing_Cues.framework"
-               BlueprintName = "Pods-Breathing Cues"
+               BlueprintIdentifier = "5ABDA99139E1E7B54664F67DB71478AD"
+               BuildableName = "InAppSettingsKit.bundle"
+               BlueprintName = "InAppSettingsKit-InAppSettingsKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DB600544857BD8726AA2FDCE9FABBD19"
-            BuildableName = "Pods_Breathing_Cues.framework"
-            BlueprintName = "Pods-Breathing Cues"
+            BlueprintIdentifier = "5ABDA99139E1E7B54664F67DB71478AD"
+            BuildableName = "InAppSettingsKit.bundle"
+            BlueprintName = "InAppSettingsKit-InAppSettingsKit"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

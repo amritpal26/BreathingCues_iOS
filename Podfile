@@ -7,6 +7,7 @@ target 'Breathing Cues' do
 
   # Pods for Breathing Cues
   pod 'UICircularProgressRing'
+  pod 'InAppSettingsKit'
   
   post_install do |installer|
       installer.pods_project.build_configurations.each do |config|

@@ -11,13 +11,21 @@ import UICircularProgressRing
 
 class SecondViewController: UIViewController{
     
+    let TIMER_2_PREF = "timer_2_pref"
+    
     var timerSeconds: [Int] = []
     var selectedTimer: Int = 30
     var remainingTime: Int = 30
-    var isTimerRunning = false
     var selectedRow = 0
     var timer = Timer()
-
+    
+    let userDefaults = UserDefaults.standard
+    
+    enum TimerState{
+        case RUNNING, PAUSED, STOPPED
+    }
+    
+    var timerState: TimerState = TimerState.STOPPED
     @IBOutlet weak var timerValue: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var progressView: UICircularProgressRing!
@@ -27,6 +35,15 @@ class SecondViewController: UIViewController{
         // Do any additional setup after loading the view, typically from a nib.
         loadData()
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        timer.invalidate()
+        progressView.value = 0
+        timerLabel.text = "0:00"
+        timerValue.setTitle(convertToSecString(totalSeconds: timerSeconds[selectedRow]), for: .normal)
+        remainingTime = selectedTimer
+        timerState = TimerState.STOPPED
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,29 +51,27 @@ class SecondViewController: UIViewController{
     }
     
     @IBAction func PauseBtn(_ sender: Any) {
-        if isTimerRunning{
+        if timerState == TimerState.RUNNING{
             timer.invalidate()
-            isTimerRunning = false
+            timerState = TimerState.PAUSED
             timerValue.isEnabled = true
             progressView.maxValue = 100
-            progressView.value = 100
         }
     }
     
     @IBAction func StartBtn(_ sender: Any) {
-        if !isTimerRunning{
+        if timerState != TimerState.RUNNING{
             runTimer()
             timerValue.isEnabled = false
             progressView.maxValue = CGFloat(selectedTimer)
-            progressView.value = CGFloat(selectedTimer)
         }
     }
     
     @IBAction func stopBtn(_ sender: Any) {
-        if isTimerRunning{
+        if timerState != TimerState.STOPPED{
             timer.invalidate()
             remainingTime = selectedTimer
-            isTimerRunning = false
+            timerState = TimerState.STOPPED
             timerLabel.text = "0:00"
             timerValue.isEnabled = true
             progressView.maxValue = CGFloat(selectedTimer)
@@ -80,7 +95,7 @@ class SecondViewController: UIViewController{
             print("You selected " + String(self.selectedTimer))
             self.selectedTimer = self.timerSeconds[self.selectedRow]
             self.remainingTime = self.selectedTimer
-            self.timerValue.setTitle(convertToString(totalSeconds: self.selectedTimer), for: .normal)
+            self.timerValue.setTitle(convertToSecString(totalSeconds: self.selectedTimer), for: .normal)
         }))
         self.present(alert,animated: true, completion: nil )
     }
@@ -95,11 +110,14 @@ class SecondViewController: UIViewController{
                 print(secArray)
             }
         }
+        
+        selectedRow = userDefaults.integer(forKey: TIMER_2_PREF)
+        print(selectedRow)
+        timerValue.setTitle(convertToSecString(totalSeconds: timerSeconds[selectedRow]), for: .normal)
     }
     
     func runTimer(){
-        print("YEs")
-        isTimerRunning = true
+        timerState = TimerState.RUNNING
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(SecondViewController.updateTimer)), userInfo: nil, repeats: true)
     }
     
@@ -107,12 +125,12 @@ class SecondViewController: UIViewController{
         if remainingTime > 0{
             remainingTime -= 1
             print(String(remainingTime) + "")
-            let timeString = convertToString(totalSeconds: remainingTime)
+            let timeString = convertToSecString(totalSeconds: remainingTime)
             timerLabel.text = timeString
-            progressView.value = CGFloat(remainingTime)
+            progressView.value = CGFloat(selectedTimer - remainingTime)
         }else{
             timer.invalidate()
-            isTimerRunning = false
+            timerState = TimerState.STOPPED
             remainingTime = selectedTimer
         }
     }
@@ -128,7 +146,7 @@ extension SecondViewController: UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return String(timerSeconds[row])
+        return convertToSecString(totalSeconds: timerSeconds[row])
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
@@ -139,7 +157,7 @@ extension SecondViewController: UIPickerViewDelegate{
     
 }
 
-func convertToString(totalSeconds: Int) -> String {
+func convertToSecString(totalSeconds: Int) -> String {
     let minutes = totalSeconds / 60
     let seconds = totalSeconds % 60
     if seconds > 9{

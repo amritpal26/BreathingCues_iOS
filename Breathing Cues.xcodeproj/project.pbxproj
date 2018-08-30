@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6A6D7B56A2145B45091036AB /* Pods_Breathing_Cues.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6837659CFCDB6139DD94E124 /* Pods_Breathing_Cues.framework */; };
+		F0436771212F83490046B677 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0436770212F83490046B677 /* SettingViewController.swift */; };
+		F0436773212FCBF20046B677 /* tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0436772212FCBF20046B677 /* tester.swift */; };
 		F0C81DDD212DFB26008E9747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C81DDC212DFB26008E9747 /* AppDelegate.swift */; };
 		F0C81DDF212DFB26008E9747 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C81DDE212DFB26008E9747 /* FirstViewController.swift */; };
 		F0C81DE1212DFB26008E9747 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C81DE0212DFB26008E9747 /* SecondViewController.swift */; };
@@ -15,12 +17,16 @@
 		F0C81DE6212DFB28008E9747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C81DE5212DFB28008E9747 /* Assets.xcassets */; };
 		F0C81DE9212DFB28008E9747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C81DE7212DFB28008E9747 /* LaunchScreen.storyboard */; };
 		F0C81DF1212E03A8008E9747 /* pickerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0C81DF0212E03A8008E9747 /* pickerData.plist */; };
+		F0E0535321375A5E00EACF21 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0E0535221375A5E00EACF21 /* beep.mp3 */; };
+		F0E053552137660400EACF21 /* end_beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F0E053542137660400EACF21 /* end_beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12B0181FB1298AE83D2F367C /* Pods-Breathing Cues.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breathing Cues.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breathing Cues/Pods-Breathing Cues.debug.xcconfig"; sourceTree = "<group>"; };
 		6837659CFCDB6139DD94E124 /* Pods_Breathing_Cues.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breathing_Cues.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04DDC9496EE0A9B0F8ED025 /* Pods-Breathing Cues.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breathing Cues.release.xcconfig"; path = "Pods/Target Support Files/Pods-Breathing Cues/Pods-Breathing Cues.release.xcconfig"; sourceTree = "<group>"; };
+		F0436770212F83490046B677 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = "/Users/amrit/Desktop/xcode/Breathing Cues/Breathing Cues/SettingViewController.swift"; sourceTree = "<absolute>"; };
+		F0436772212FCBF20046B677 /* tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tester.swift; sourceTree = "<group>"; };
 		F0C81DD9212DFB26008E9747 /* Breathing Cues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breathing Cues.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C81DDC212DFB26008E9747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0C81DDE212DFB26008E9747 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +36,8 @@
 		F0C81DE8212DFB28008E9747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0C81DEA212DFB28008E9747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0C81DF0212E03A8008E9747 /* pickerData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = pickerData.plist; sourceTree = "<group>"; };
+		F0E0535221375A5E00EACF21 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beep.mp3; path = ../../../../../AndroidStudioProjects/BreathingCues2/app/src/main/res/raw/beep.mp3; sourceTree = "<group>"; };
+		F0E053542137660400EACF21 /* end_beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = end_beep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +93,25 @@
 				F0C81DDC212DFB26008E9747 /* AppDelegate.swift */,
 				F0C81DDE212DFB26008E9747 /* FirstViewController.swift */,
 				F0C81DE0212DFB26008E9747 /* SecondViewController.swift */,
+				F0436770212F83490046B677 /* SettingViewController.swift */,
 				F0C81DE2212DFB26008E9747 /* Main.storyboard */,
+				F0436772212FCBF20046B677 /* tester.swift */,
 				F0C81DE5212DFB28008E9747 /* Assets.xcassets */,
 				F0C81DE7212DFB28008E9747 /* LaunchScreen.storyboard */,
 				F0C81DEA212DFB28008E9747 /* Info.plist */,
 				F0C81DF0212E03A8008E9747 /* pickerData.plist */,
+				F0E0534F213755C700EACF21 /* sound */,
 			);
 			path = "Breathing Cues";
+			sourceTree = "<group>";
+		};
+		F0E0534F213755C700EACF21 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				F0E053542137660400EACF21 /* end_beep.mp3 */,
+				F0E0535221375A5E00EACF21 /* beep.mp3 */,
+			);
+			path = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +176,10 @@
 			files = (
 				F0C81DE9212DFB28008E9747 /* LaunchScreen.storyboard in Resources */,
 				F0C81DE6212DFB28008E9747 /* Assets.xcassets in Resources */,
+				F0E0535321375A5E00EACF21 /* beep.mp3 in Resources */,
 				F0C81DF1212E03A8008E9747 /* pickerData.plist in Resources */,
 				F0C81DE4212DFB26008E9747 /* Main.storyboard in Resources */,
+				F0E053552137660400EACF21 /* end_beep.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,15 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Breathing Cues-checkManifestLockResult.txt",
 			);
@@ -191,16 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Breathing Cues/Pods-Breathing Cues-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/InAppSettingsKit/InAppSettingsKit.framework",
 				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InAppSettingsKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +233,9 @@
 			files = (
 				F0C81DE1212DFB26008E9747 /* SecondViewController.swift in Sources */,
 				F0C81DDD212DFB26008E9747 /* AppDelegate.swift in Sources */,
+				F0436773212FCBF20046B677 /* tester.swift in Sources */,
 				F0C81DDF212DFB26008E9747 /* FirstViewController.swift in Sources */,
+				F0436771212F83490046B677 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

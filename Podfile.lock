@@ -1,16 +1,20 @@
 PODS:
+  - InAppSettingsKit (2.9)
   - UICircularProgressRing (3.3.1)
 
 DEPENDENCIES:
+  - InAppSettingsKit
   - UICircularProgressRing
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - InAppSettingsKit
     - UICircularProgressRing
 
 SPEC CHECKSUMS:
+  InAppSettingsKit: fc3dea21846535b76b8289b119dbfdbe2505b2b2
   UICircularProgressRing: 439e035120ef47faa7feb934d5a63f8622068b1d
 
-PODFILE CHECKSUM: ba4be41fb243a6e70dc8f0b3f51e412ceb6d2cae
+PODFILE CHECKSUM: 4056cd60b44031a91a8ff6a9a6248e0607c9294d
 
 COCOAPODS: 1.5.3
