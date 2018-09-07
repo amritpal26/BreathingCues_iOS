@@ -67,6 +67,7 @@ class FirstViewController: UIViewController {
     var selectedHold1Time: float_t = 0
     var selectedHold2Time: float_t = 0
     var remainingTimerMillis: Int = 15000
+    var timerTimeMillis: Int = 0;
     
     // Varibales for a cycle.
     var inhaleRangeMillis: Int = 0
@@ -136,32 +137,39 @@ class FirstViewController: UIViewController {
     
     @IBAction func inhalePicker(_ sender: UIButton) {
         setPickers(tag: INHALE_EXHALE_TAG, pickerId: INHALE_PICKER_ID)
+        resetLabels()
     }
     
     @IBAction func hold1Picker(_ sender: UIButton) {
         setPickers(tag: HOLD_TAG, pickerId: HOLD1_PICKER_ID)
+        resetLabels()
     }
     
     @IBAction func exhalePicker(_ sender: UIButton) {
         setPickers(tag: INHALE_EXHALE_TAG, pickerId: EXHALE_PICKER_ID)
+        resetLabels()
     }
     
     @IBAction func hold2Picker(_ sender: UIButton) {
         setPickers(tag: HOLD_TAG, pickerId: HOLD2_PICKER_ID)
+        resetLabels()
     }
     
     @IBAction func timerPicker(_ sender: UIButton) {
         setPickers(tag: TIMER_TAG, pickerId: TIMER_PICKER_ID)
+        resetLabels()
     }
     @IBAction func startBtnPressed(_ sender: Any) {
         if breathingState == BreathingState.NEW_TIMER || breathingState == BreathingState.PAUSED || breathingState == BreathingState.STOPPED{
             startTimer()
         }else{
+            breathingState = BreathingState.PAUSED
             stopTimer()
         }
     }
     @IBAction func timerLabelPressed(_ sender: Any) {
         if breathingState == BreathingState.INHALE || breathingState == BreathingState.EXHALE || breathingState == BreathingState.HOLD {
+            breathingState = BreathingState.PAUSED
             stopTimer()
         }else{
             remainingTimerMillis = 0
@@ -236,16 +244,12 @@ class FirstViewController: UIViewController {
         }catch{
             print(error)
         }
-        
-        
     }
     
     func startTimer(){
-        remainingTimerMillis = Int(selectedTimerTime * FACTOR)
         if breathingState == BreathingState.PAUSED || breathingState == BreathingState.NEW_TIMER || breathingState == BreathingState.STOPPED{
             
             totalTime.isOpaque = true
-            progressView.maxValue = CGFloat(remainingTimerMillis)
             breathingState = BreathingState.NEW_TIMER
             inhaleRangeMillis = Int(selectedInhaleTime * FACTOR)
             hold1RangeMillis = inhaleRangeMillis + Int(selectedHold1Time * FACTOR)
@@ -253,6 +257,11 @@ class FirstViewController: UIViewController {
             hold2RangeMillis = exhaleRangeMillis + Int(selectedHold2Time * FACTOR)
             
             cycleRangeMillis = hold2RangeMillis
+            let numberOfCycles = (Int(selectedTimerTime) / cycleRangeMillis) + 1
+            timerTimeMillis = numberOfCycles * cycleRangeMillis
+            remainingTimerMillis = Int(timerTimeMillis)
+            progressView.maxValue = CGFloat(remainingTimerMillis)
+            
             setActionMax(max: cycleRangeMillis)
             
             // Start the timer.
@@ -263,7 +272,7 @@ class FirstViewController: UIViewController {
     
     @objc func timerResponse(){
         if remainingTimerMillis > 0{
-            // Factor of seconds used.
+            print(remainingTimerMillis)
             
             progressView.value = UICircularProgressRing.ProgressValue(millisElapsedTotal)
             currentCycleNumber = millisElapsedTotal / cycleRangeMillis
@@ -286,7 +295,7 @@ class FirstViewController: UIViewController {
                 let inhaleProgressMillis = (millisElapsedTotal - (currentCycleNumber * cycleRangeMillis))
                 let progressSec: float_t = float_t(inhaleProgressMillis / 10)
                 let inhaleTimer = selectedInhaleTime - progressSec
-                totalTime.setTitle(convertToString(totalSeconds: inhaleTimer), for: .normal)
+                totalTime.setTitle(getRemainingTimeString(totalSeconds: inhaleTimer), for: .normal)
                 setActionProgress(progress: inhaleProgressMillis)
                 
                 
@@ -303,7 +312,7 @@ class FirstViewController: UIViewController {
                 let progressMillis = (millisElapsedTotal - (currentCycleNumber * cycleRangeMillis)) - inhaleRangeMillis
                 let progressSec: float_t = float_t(progressMillis / 10)
                 let holdTimer = selectedHold1Time - progressSec
-                totalTime.setTitle(convertToString(totalSeconds: holdTimer), for: .normal)
+                totalTime.setTitle(getRemainingTimeString(totalSeconds: holdTimer), for: .normal)
                 
             }else if (millisElapsedTotal - (currentCycleNumber * cycleRangeMillis)) < exhaleRangeMillis {
                 if breathingState != BreathingState.EXHALE{
@@ -321,7 +330,7 @@ class FirstViewController: UIViewController {
                 let exhaleNegProgressMillis = (exhaleRangeMillis + (currentCycleNumber * cycleRangeMillis)) - millisElapsedTotal
                 let progressSec: float_t = float_t(progressMillis / 10)
                 let exhaleTimer = selectedExhaleTime - progressSec
-                totalTime.setTitle(convertToString(totalSeconds: exhaleTimer), for: .normal)
+                totalTime.setTitle(getRemainingTimeString(totalSeconds: exhaleTimer), for: .normal)
                 setActionProgress(progress: exhaleNegProgressMillis)
                 
             }else if (millisElapsedTotal - (currentCycleNumber * cycleRangeMillis)) < hold2RangeMillis {
@@ -337,9 +346,10 @@ class FirstViewController: UIViewController {
                 let progressMillis = (millisElapsedTotal - (currentCycleNumber * cycleRangeMillis)) - exhaleRangeMillis
                 let progressSec: float_t = float_t(progressMillis / 10)
                 let holdTimer = selectedHold2Time - progressSec
-                totalTime.setTitle(convertToString(totalSeconds: holdTimer), for: .normal)
+                totalTime.setTitle(getRemainingTimeString(totalSeconds: holdTimer), for: .normal)
             }
         }else{
+            breathingState = BreathingState.STOPPED
             stopTimer()
             playSound(isEnd: true)
         }
@@ -348,22 +358,23 @@ class FirstViewController: UIViewController {
     }
     
     func stopTimer(){
-        breathingState = BreathingState.PAUSED
         totalTime.setTitle("0", for: .normal)
         totalTime.isOpaque = false
         timer.invalidate()
         unlockPickers()
         
-        if remainingTimerMillis <= 0{
-            startBtn.setTitle("Start", for: .normal)
+        if remainingTimerMillis <= 0 && breathingState != BreathingState.NEW_TIMER{
+            startBtn.setTitle("Restart", for: .normal)
             totalTime.setTitle("0:00", for: .normal)
             progressView.value = progressView.maxValue
+            remainingTimerMillis = 0
+            millisElapsedTotal = 0
             playSound(isEnd: true)
         }
         else{
             startBtn.setTitle("Continue", for: .normal)
             totalTime.setTitle("Restart", for: .normal)
-            progressView.value = 0
+//            progressView.value = 0
         }
     }
     
@@ -423,6 +434,20 @@ class FirstViewController: UIViewController {
             let str = (totalSeconds.truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", totalSeconds) : String(totalSeconds))
             return str
         }
+    }
+    
+    func getRemainingTimeString(totalSeconds: float_t) -> String{
+        let secs: Int = Int(totalSeconds)
+        return String(secs)
+    }
+    
+    func resetLabels(){
+        stopTimer()
+        
+        totalTime.setTitle("0", for: .normal)
+        startBtn.setTitle("Start", for: .normal)
+        remainingTimerMillis = 0
+        millisElapsedTotal = 0
     }
 }
 

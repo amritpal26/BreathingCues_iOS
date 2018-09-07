@@ -130,8 +130,8 @@ class SettingViewController: UITableViewController{
         
         let content = UNMutableNotificationContent()
         content.title = "Reminder"
-        content.subtitle = "Remember to do the breathing exercise"
-        content.body = "Time to do a breathing exercise"
+//        content.subtitle = "Remember to do the relaxing exercise"
+        content.body = "Time to do the relaxing exercise"
         content.badge = 1
         
         if reminder == 1{
